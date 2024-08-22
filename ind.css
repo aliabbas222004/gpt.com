@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.t-div{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+table,tr,td,th{
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    padding: 5px 20px;
+}
+
+td{
+    padding: 5px 5px;
+}
+
+td a{
+    text-decoration: none;
+    color: red;
+}
+
+td a:hover{
+    color: white;
+}

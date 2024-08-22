@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT</title>
+    <link rel="icon" href="i1.jpeg">
+    <style>
+        body {
+            margin: 0;
+            overflow:hidden;
+            background-color: black;
+        }
+
+        .spark {
+            position: absolute;
+            bottom: 0;
+            background-color: orange;
+            border-radius: 50%;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translate(0, 0) scale(0.5);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(calc(var(--moveX) * 1px), -100vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .d1{
+            position: relative;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            z-index: 2;
+            
+        }
+
+        .im1{
+            height: 270px;
+        }
+
+        .d2{
+            /* display: none; */
+            color: white;
+            text-align: left;
+            position: absolute;
+            left: 160px;
+            top: 0px;
+            font-size: 40px;
+            font-family:Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+
+        .nav{
+            color: white;
+            position: absolute;
+            top: 25px;
+            right: 0;
+            display: none;
+        }
+        .nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: right;
+        }
+        .nav ul a{
+            margin-right: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 5px 5px;
+            border-radius: 5px;
+        }
+
+        .nav ul a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .bdy{
+            color: white;
+            display: none;
+        }
+
+        .bdy1,.bdy3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px;
+        }
+
+        .p1{
+            
+            font-size: 50px;
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+        }
+
+        .bdy1 .p1{
+            margin-right: 50px;
+        }
+        
+        .bdy1 img{
+            border-radius: 50px;
+            width: 700px;
+        }
+
+        .bdy0,.bdy2{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .bdy0-m1,.bdy2-m1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .bdy0-m1-s1,.bdy2-m1-s1{
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            margin: 10px 20px;
+            color: black;
+        }
+
+        .bdy0-m1-s1{
+            cursor: pointer;
+        }
+
+        .bdy0-m1-s1:hover{
+            background-color: gainsboro;
+        }
+
+        .bdy0-m1-s1 img,.bdy2-m1-s1 img{
+            width: 250px;
+            margin: 20px 0px;
+        }
+
+        .bdy3 .p1{
+            margin-left: 50px;
+        }
+        
+        .bdy3 img{
+            border-radius: 50px;
+            width: 500px;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="test.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <div class="d0">
+        <div class="d1">
+            <img src="i1.jpeg" alt="im" class="im1">
+        </div>
+        <pre class="d2"></pre> 
+        
+        
+    </div>
+    
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;About Us</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-cogs"></i>&nbsp;&nbsp;Services</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        
+
+        <div class="bdy">
+            <div class="bdy0">
+                HIGHLY DEMANDED SUBJECTS
+                <div class="bdy0-m1">
+                    <div class="bdy0-m1-s1" onclick="load1()">
+                        <img src="html.jpeg" alt="#" style="height: 250px;border-radius: 10px;">
+                        HTML
+                    </div>
+                    <div class="bdy0-m1-s1" onclick="load2()">
+                        <img src="dbms.jpeg" alt="#" style="height: 250px;border-radius: 10px;">
+                        DBMS
+                    </div>
+                    <div class="bdy0-m1-s1" onclick="load3()">
+                        <img src="maths.jpeg" alt="#" style="height: 250px;border-radius: 10px;">
+                        MATHS
+                    </div>
+                    <script>
+                        function load1(){
+                            window.location='startm.html';
+                        }
+                    </script>
+                </div>
+            </div>
+            <!-- <div class="bdy0">
+                <button onclick="perform()"><img src="html.jpeg" alt="HTML">HTML</button>
+                <script>
+                    function perform(){
+                        window.location='startm.html';
+                    }
+                </script>
+            </div> -->
+            <div class="bdy1">
+                <p class="p1">
+                    LEARN WITH <br> HAPPINESS & CONFIDENCE
+                </p>
+                <img src="conf1.jpg" alt="#">
+            </div>
+
+            <div class="bdy2">
+                <div class="bdy2-m1">
+                    <div class="bdy2-m1-s1">
+                        <img src="knowledge.jpeg" alt="#" style="height: 250px;border-radius: 10px;">
+                        Gain <br> knowledge
+                    </div>
+                    <div class="bdy2-m1-s1">
+                        <img src="practice.jpeg" alt="#" style="height: 250px;">
+                        Practice 
+                    </div>
+                    <div class="bdy2-m1-s1">
+                        <img src="test.jpg" alt="#">
+                        Test your <br> knowledge
+                    </div>
+                </div>
+            </div>
+
+            <div class="bdy3">
+                <img src="blooms-2.jpeg" alt="#">
+                <p class="p1">
+                    Generate High level thinking <br> using BLOOM'S TAXONOMY
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

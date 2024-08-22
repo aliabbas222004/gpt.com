@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.h{
+    text-align: center;
+}
+.h h1{
+    margin: 20px;
+    font-size: 35px;
+}
+
+.h p{
+    font-size: 25px;
+}
+
+section{
+    margin: 5%;
+    margin-top:10%;
+    display: flex;
+}
+
+section div{
+    margin-left: 200px;
+}
+
+
+section div p{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+ol{
+    font-size: 25px;
+}
+
+ol li{
+    margin: 2px;
+}
+
+section img{
+    position: relative;
+    left:100px;
+    top:-60px;
+    width: 20%;
+}
+
+.d1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d2 a{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    padding: 5px 10px;
+    background-color: aqua;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.a1:hover,.a2:hover{
+    background-color: rgb(162, 162, 235);
+    font-size: 20px;
+    padding: 6px 11px;
+}

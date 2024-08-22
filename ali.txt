@@ -1,0 +1,10 @@
+HTML stands for __________|HyperText Markup Language|HyperText Machine Language|HyperText Marking Language|HighText Marking Language|1
+What is the correct syntax of doctype in HTML5?|&lt;/doctype html&gt;|&lt;doctype html&gt;|&lt;doctype html!&gt;|&lt;!doctype html&gt;|4
+Which of the following is used to read an HTML page and render it?|Web server|Web network|Web browser|Web matrix|3
+Which of the following tag is used for inserting the largest heading in HTML?|head|&lt;h1&gt;|&lt;h6&gt;|heading|2
+In which part of the HTML metadata is contained?|head tag|title tag|html tag|body tag|1
+Which element is used to get highlighted text in HTML5?|&lt;u&gt;|&lt;mark&gt;|&lt;highlight&gt;|&lt;b&gt;|2
+Which of the following is not a HTML5 tag?|&lt;track&gt;|&lt;video&gt;|&lt;slider&gt;|&lt;source&gt;|3
+How do we write comments in HTML?|&lt;/…….&gt;|&lt;!……&gt;|&lt;/……/&gt;|&lt;…….!&gt;|2
+Which of the following is not the element associated with the HTML table layout?|alignment|color|size|spanning|2
+Which element is used for styling HTML5 layout?|CSS|jQuery|JavaScript|PHP|1
